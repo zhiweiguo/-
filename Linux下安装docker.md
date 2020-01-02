@@ -67,7 +67,11 @@ win10中Linux子系统安装docker记录
 
    docker exec -it -u root tensorflow/tensorflow:1.13.2-py3 /bin/bash
 
-   
+4. 删除容器
+
+   - 删除单个指定容器 ：        docker rm  容器名称                
+   - 删除所有容器 ：	          docker rm $(docker ps -aq)     
+   - 停用并删除所有容器 ：    docker stop $(docker ps -q) & docker rm $(docker ps -aq)                     
 
 ## 常见问题
 
